@@ -1,6 +1,7 @@
 plugins {
-    alias(libs.plugins.android.application)
+//    alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.android.application") version "8.12.3"
 }
 
 android {
@@ -30,7 +31,7 @@ buildFeatures{
     }
     android{
         buildFeatures{
-          val binding = true
+          viewBinding = true
         }
     }
     compileOptions {
